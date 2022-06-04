@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:apkCalculadora"
+             x:Class="apkCalculadora.MainPage"
+             BackgroundColor="Chocolate">
+    
+  
+
+    <StackLayout
+         HorizontalOptions="Center"
+        VerticalOptions="Center">
+
+        <Label Text="MANFREDI GUARDADO" 
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="30"
+                TextColor="Blue"   />
+       
+        
+            <Label Text="Calculadora" 
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                TextColor="Black" FontSize="25"  />
+
+       
+        <Label Text="NUMERO 1" TextColor="Black" FontSize="25" />
+            <Entry Placeholder="Ingresa el primer numero" Keyboard="Numeric" x:Name="txtn1" TextColor="Blue" />
+        <Label Text="NUMERO 2" TextColor="Black" FontSize="25" />
+        <Entry Placeholder="Ingresa el segundo numero" Keyboard="Numeric" x:Name="txtn2" TextColor="Blue" />
+            <Label Text="Selecione la operacion"  />
+            <Picker x:Name="wkOperacion" />
+
+            <Button Text="Calcular" x:Name="calcular" 
+                    BackgroundColor="Lavender"/>
+
+        <Label TextColor="Black"  Text="----"  x:Name="lblRes"
+                   HorizontalOptions="Center"
+                   FontFamily="italic"
+                   FontSize="20"/>
+
+
+    </StackLayout>
+
+</ContentPage>
